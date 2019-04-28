@@ -8,6 +8,10 @@ import org.springframework.stereotype.Component;
 import rocks.cleanstone.core.config.CleanstoneConfig;
 import rocks.cleanstone.core.config.MinecraftConfig;
 
+/**
+ * The main Cleanstone server instance which coordinates all {@link CleanstoneSubServer} instances. There
+ * currently are only main server instances.
+ */
 @SpringBootApplication
 @Component("cleanstoneMainServer")
 @Profile(value = "mainServer")

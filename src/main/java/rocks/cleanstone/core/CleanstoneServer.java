@@ -19,6 +19,10 @@ import rocks.cleanstone.core.config.MinecraftConfig;
 import rocks.cleanstone.core.event.CleanstoneEventPublisher;
 import rocks.cleanstone.core.event.EventExecutionException;
 
+/**
+ * The central Cleanstone server instance which is initialized very early and destroyed very late. It provides
+ * convenient static access to event publication, message sources and shutdown/restart functions.
+ */
 @Slf4j
 public abstract class CleanstoneServer {
     private static final Locale DEFAULT_LOCALE = Locale.ENGLISH;
